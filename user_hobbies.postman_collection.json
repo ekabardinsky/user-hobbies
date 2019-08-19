@@ -1,0 +1,162 @@
+{
+	"variables": [],
+	"info": {
+		"name": "user hobbies",
+		"_postman_id": "f8f32768-c5f0-5a57-a083-c2c73b2d68c6",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getListOfUsers",
+			"request": {
+				"url": "http://localhost:3000/api/users",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "createUser",
+			"request": {
+				"url": "http://localhost:3000/api/users",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Peter\",\n\t\"hobbies\": []\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "updateUser",
+			"request": {
+				"url": "http://localhost:3000/api/users/5ce6a63d6c9ae5124041d97f",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Peter\",\n\t\"hobbies\": []\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getUser",
+			"request": {
+				"url": "http://localhost:3000/api/users/5ce6a63d6c9ae5124041d97f",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Peter\",\n\t\"hobbies\": []\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "deleteUser",
+			"request": {
+				"url": "http://localhost:3000/api/users/5ce6b8cdb7378c33cca72670",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getUsersHobbies",
+			"request": {
+				"url": "http://localhost:3000/api/users/5ce6a63d6c9ae5124041d97f/hobbies",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Peter\",\n\t\"hobbies\": []\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "createUsersHobby",
+			"request": {
+				"url": "http://localhost:3000/api/users/5ce6a63d6c9ae5124041d97f/hobbies",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Music\",\n\t\"year\": 2019,\n\t\"passionLevel\": \"Very-High\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "removeUsersHobby",
+			"request": {
+				"url": "http://localhost:3000/api/users/5ce6a63d6c9ae5124041d97f/hobbies/5ce6bea75c2bbe30d4d3a718",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
